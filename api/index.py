@@ -8,9 +8,6 @@ ALLOWED_USERS = [
     "user_3"
 ]
 
-@app.route("/api/giveaccess", methods=["GET"])
+@app.route("/", methods=["GET"])
 def give_access():
     return jsonify({"users": ALLOWED_USERS})
-
-if __name__ == "__main__":
-    app.run(debug=True)
