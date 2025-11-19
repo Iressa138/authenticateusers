@@ -8,6 +8,6 @@ ALLOWED_USERS = [
     "user_3"
 ]
 
-@app.route("/", methods=["GET"])
+@app.route("/api/giveaccess", methods=["GET"])
 def give_access():
     return jsonify({"users": ALLOWED_USERS})
